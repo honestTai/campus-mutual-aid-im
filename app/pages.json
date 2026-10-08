@@ -1,0 +1,175 @@
+{
+	"pages": [{
+			//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+			"path": "pages/new/new",
+			"style": {
+				"navigationBarTitleText": "最新",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/photo/photo",
+			"style": {
+				"navigationBarTitleText": "共享论坛",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationBarBackgroundColor": "#000000",
+				"backgroundColor": "#000000",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				},
+				"h5": {
+					"titleNView": {
+						"buttons": [{
+								"type": "share"
+							},
+							{
+								"type": "favorite"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/tag/tag",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "专题",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#1cbbb4"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/update/update",
+			"style": {
+				"navigationBarTitleText": "修改信息"
+			}
+		},
+		{
+			"path": "pages/upload/upload",
+			"style": {
+				"navigationBarTitleText": "上传图片"
+			}
+		},
+		{
+			"path": "pages/myPhoto/myPhoto",
+			"style": {
+				"navigationBarTitleText": "我的图片"
+			}
+		},
+		{
+			"path": "pages/collect/myCollect",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/search/list",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path": "pages/photo/addPhotoCircle",
+			"style": {
+				"navigationBarTitleText": "发表内容",
+				"navigationBarBackgroundColor":"#1cbbb4"
+			}
+		}
+        ,{
+            "path" : "pages/comments/comments",
+            "style" :
+            {
+                "navigationBarTitleText": "评论",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        ,{
+            "path" : "pages/photo/commentList",
+            "style" :
+            {
+                "navigationBarTitleText": "详情内容",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#1cbbb4"
+            }
+
+        },
+		{
+			"path" : "pages/mineData/mineData",
+			"style" :
+			{
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#1cbbb4"
+			}
+
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "看图",
+		"navigationBarBackgroundColor": "#87CEFA",
+		"backgroundColor": "#87CEFA"
+	},
+	"tabBar": {
+		"color": "#444444",
+		"selectedColor": "#87CEFA",
+		"borderStyle": "black",
+//		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/new/new",
+				"iconPath": "static/index-0.png",
+				"selectedIconPath": "static/index-0.png",
+				"text": "图片"
+			},
+			{
+				"pagePath": "pages/photo/photo",
+				"iconPath": "static/hot-0.png",
+				"selectedIconPath": "static/hot-0.png",
+				"text": "论坛"
+			},
+			{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/center-0.png",
+				"selectedIconPath": "static/center-0.png",
+				"text": "个人中心"
+			}
+		]
+	}
+}

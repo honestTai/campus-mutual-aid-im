@@ -1,0 +1,42 @@
+@startuml
+actor "校园App用户" as user
+participant "图片内容浏览" as homePage
+database "系统DB" as systemRecords
+participant "系统" as system
+
+activate user
+user -> homePage: 进入App首页界面
+activate homePage
+
+user -> homePage: 选择图片内容分类
+homePage -> system: 用户选择分类请求
+activate system
+
+system -> systemRecords: 获取所选分类下的所有图片内容
+activate systemRecords
+systemRecords --> system: 图片内容列表结果
+deactivate systemRecords
+
+user -> homePage: 选择排序方式
+homePage -> system: 用户选择排序方式请求
+activate system
+
+system -> systemRecords: 根据排序方式重新展示图片内容列表
+activate systemRecords
+systemRecords --> system: 重新排序后的图片内容列表结果
+deactivate systemRecords
+
+user -> homePage: 浏览和查看图片内容详细信息
+
+user -> homePage: 点击收藏按钮
+homePage -> system: 用户收藏图片内容请求
+activate system
+
+system -> systemRecords: 将图片内容添加到用户收藏夹
+activate systemRecords
+systemRecords --> system: 添加收藏结果
+deactivate systemRecords
+
+deactivate user
+deactivate system
+@enduml
